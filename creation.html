@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Design</title>
+
+   <!-- Logo Favicon -->
+   <!-- <link rel="icon" type="image/png" href="images/geo-flower.png"> -->
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Quicksand:400,700|Barlow" rel="stylesheet">
+   <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+   <!-- Google TEE Fonts  -->
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Lobster|Monoton|Paytone+One" rel="stylesheet">
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- jQuery files -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+   <!-- jQueryUI -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" defer></script>
+   <!-- My CSS styles -->
+   <link rel="stylesheet" href="creation.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <!-- My JS files -->
+   <script src="/assets/js/design.js" defer></script>
+
+</head>
+
+<body>
+
+
+   <div class="create">
+      <div class="side-logo">
+         <input type="checkbox" id="check">
+         <label for="check">
+             <!-- <i class="fa-sharp fa-solid fa-bars fa-3x" id="sidebar-btn"></i> -->
+             <i class="fas fa-bars" id="sidebar-btn"></i>
+             <i class="fas fa-times" id="cancel"></i>
+         </label>
+         <div class="sidebar">
+             <header style="color:#F05A30">Printwear</header>
+             <a href="#" class="active">
+                 <i class="fas fa-qrcode"></i>
+                 <span>Dashboard</span>
+             </a>
+             <a href="design.html">
+                 <i class="fa-regular fa-image"></i>
+                 <span>Design Gallery</span>
+             </a>
+             <a href="cart.html">
+                 <i class="fa-solid fa-square-plus"></i>
+                 <span>Place Order</span>
+             </a>
+             <a href="manageorder.html">
+                 <i class="fa-solid fa-rectangle-list"></i>
+                 <span>Order Management</span>
+             </a>
+             <a href="stock.html">
+                 <i class="fa-solid fa-chart-simple"></i>
+                 <span>Stock Inventory</span>
+             </a>
+             <a href="mockup.html">
+                 <i class="fa-regular fa-image"></i>
+                 <span>Mockup Generator</span>
+             </a>
+             <a href="connectyourstore.html">
+                 <i class="fa-solid fa-store"></i>
+                 <span>Connect your Store</span>
+             </a>
+             <a href="invoice.html">
+                 <i class="fa-solid fa-briefcase"></i>
+                 <span>Invoicing</span>
+             </a>
+             <a href="#">
+                 <i class="fa-solid fa-location-dot"></i>
+                 <span>Serviceable PIN codes</span>
+             </a>
+             <!-- <a href="#">
+                 <i class="fa-solid fa-gear"></i>
+                 <span>Configuration</span>
+             </a> -->
+             <a href="index.html">
+                 <i class="fa-solid fa-right-from-bracket"></i>
+                 <span>Logout</span>
+             </a>
+         </div>
+     </div>
+      <div class="top">
+         <div class="logo">
+            <img src="images/Logo.png" id="logo">
+         </div>
+         <div class="top-icons">
+            <i class="fa-solid fa-wallet fa-lg" id="icon"></i>
+            <p>$4500</p>
+            <i class="fa-solid fa-arrows-rotate fa-lg" id="icon"></i>
+            <i class="fa-solid fa-cart-shopping fa-lg" id="icon"></i>
+         </div>
+      </div>
+      <br>
+      
+
+      <main class="flex-row stacked">
+         <!-- SHIRT CONTAINER -->
+
+         <section class="shirt-container" id="example" data-aos="fade-up">
+            <!-- <div id="examples">
+               <div class="front">
+                  <img class="tee" src="images/mens-tee-front-black.png" />
+               </div>
+               <div class="back">
+                  <img class="tee" src="images/backside_tshirt-removebg.png" />
+               </div>
+               
+            </div> -->
+            <div class="creation-left">
+               <div class="main-box">
+                  <div class="creation-card">
+                     <div class="front">
+                        <div class="frnt">
+                           <img src="images/mens-tee-front-black.png" id="front-tshirt">
+                        </div>
+                        <div class="current-design front-design">
+                           <div id="design-target" class="print-area">
+                              <img id="design-display" src="" />
+                              <p id="text-display"></p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="back">
+                        <div class="bck">
+                           <img src="images/backside_tshirt-removebg.png" id="back-tshirt">
+                        </div>
+                        <div class="current-design1 back-design">
+                           <div id="design-target" class="print-area1">
+                              <img id="design-display1" src="" />
+                              <p id="text-display1"></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
+
+
+
+         <!-- INFO CONTAINER -->
+         <section class="info-container" data-aos="fade-up">
+            <!-- <div class="arrow"><button onclick="flip()"><i class="fa-solid fa-angle-right fa-5x"></i></button></div> -->
+            <!-- GARMENT STYLE -->
+            <section id="garment-control" class="garment mobile-info-display">
+               <div class="flex-row">
+                  <!-- GARMENT POSITION -->
+                  <div class="garmentpos flex-row">
+                     <div class="dropdown-container">
+                        <div class="dropdown">
+                           <button class="dropdown-button">
+                              <span class="button-label">Placement</span>
+                              <i class="fa fa-angle-down"></i>
+                           </button>
+                           <ul class="dropdown-options">
+                              <li class="dropdown-option is-selected" id="Front">Front</li>
+                              <li class="dropdown-option" id="Back">Back</li>
+                              <!-- <li class="dropdown-option" id="Sleeve">Sleeve</li> -->
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="value-container">
+                        <span id="placement-value" class="current-value">
+                           Front
+                        </span>
+                     </div>
+                  </div>
+               </div>
+               <!-- <hr /> -->
+
+               <!-- GARMENT COLOR -->
+               <div class="flex-row">
+                  <div class="flex-row">
+                     <span>Color:</span>
+                     <span class="current-value">Black</span>
+                  </div>
+                  <div class="flex-row">
+                     <div class="garment-swatch black is-selected"></div>
+                     <div class="garment-swatch silver"></div>
+                     <div class="garment-swatch navy"></div>
+                     <div class="garment-swatch red"></div>
+                     <div class="garment-swatch white"></div>
+                     <div class="garment-swatch charcoal"></div>
+                  </div>
+               </div>
+               <span type="button" class="mobile-close"> CLOSE </span>
+            </section>
+            <!-- end of garment section  -->
+
+            <!-- TEXT SECTION -->
+            <section id="text-control" class="text-design mobile-info-display">
+               <!-- TEXT FONT SECTION -->
+               <div class="text-box">
+                  <input id="custom-text" class="custom-text" type="text" placeholder="Add Your Text Here" />
+                  <button id="text-plus" class="size-control"><i class="fas fa-plus"></i></button>
+                  <button id="text-minus" class="size-control"><i class="fas fa-minus"></i></button>
+               </div>
+               <div class="fonts flex-row">
+                  <div class="flex-row-between">
+                     <div class="dropdown-container">
+                        <div class="dropdown">
+                           <button class="dropdown-button">
+                              <span class="button-label">Font</span>
+                              <i class="fa fa-angle-down"></i>
+                           </button>
+                           <ul class="dropdown-options">
+                              <li class="dropdown-option font-option">Paytone One</li>
+                              <li class="dropdown-option font-option is-selected">Lobster</li>
+                              <li class="dropdown-option font-option">Monoton</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="value-container">
+                        <span id="font-value" class="current-value">
+                           Lobster
+                        </span>
+                     </div>
+                  </div>
+
+                  <!-- TEXT COLOR SECTION -->
+
+                  <div class="flex-row">
+
+                     <div>
+                        <input type="color" id="color-choice" name="color-choice" value="#A981E3" />
+                        <label for="body"></label>
+                     </div>
+                     <div class="value-container">
+                        <span id="text-color-value" class="current-value">
+                           #A981E3
+                        </span>
+                     </div>
+                  </div>
+               </div>
+               <span class="mobile-close"> CLOSE </span>
+            </section>
+            <!-- end of text section -->
+
+            <!-- IMAGE SECTION -->
+            <section id="image-control" class="image-container mobile-info-display">
+               <div class="img-con">
+                  <div class="flex-col image-design">
+
+                     <!-- upload file button, masked with a styled button -->
+                     <div class="im-top">
+                        <input id="image-input" type="file" />
+                        <button type="button" id="upload-button" class="image-upload">Upload Image</button>
+                     </div>
+                     <div class="im-bottom">
+                        <span>Width:</span>
+                        <span class="current-value current-width"></span>
+                        <span>Height:</span>
+                        <span class="current-value current-height"></span>
+                        <button id="width-plus" class="size-control"><i class="fas fa-plus"></i></button>
+                        <button id="width-minus" class="size-control"><i class="fas fa-minus"></i></button>
+                     </div>
+                  </div>
+                  <span type="button" class="mobile-close"> CLOSE </span>
+                  <!-- <div class="chk-avail">
+                     <input type="text" placeholder="Check Availability">
+                     <button><i class="fa-solid fa-check"></i></button>
+                  </div> -->
+               </div>
+            </section>
+
+            <!-- DEFAULT IMAGE SECTION -->
+            <section id="default-control" class="default-container mobile-info-display">
+               <div class="dft-con">
+                  <p class="image-instr">Don't have an image ready? Use one of ours.</p>
+                  <button type="button" class="default-image">
+                     <img src="images/geo-flower.png" />
+                  </button>
+                  <button type="button" class="default-image black">
+                     <img src="images/flaming-bunny.png" />
+                  </button>
+                  <button type="button" class="default-image black">
+                     <img src="images/sugar-skull.svg" />
+                  </button>
+                  <span type="button" class="mobile-close"> CLOSE </span>
+               </div>
+            </section>
+
+            <!-- <hr> -->
+            <!-- SAVE SECTION -->
+            <div class="save-box">
+               <form method="POST" action=".">
+                  <input type="hidden" name="style-value-hidden" value="MensTee" />
+                  <div class="flex-column save-container">
+                     <a href="checkout.html" style="text-decoration: none;">
+                        <button type="button" class="save" id="dlpng" onclick="rex()">PROCEED</button>
+                     </a>
+                  </div>
+               </form>
+            </div>
+
+         </section>
+         <!-- end of info Container  -->
+
+         <section class="flex-row mobile-label">
+
+         </section>
+
+         <section class="flex-row mobile-position">
+            <div id="mb-left" class="mobile-icon-pos">
+               <i class="fas fa-arrow-circle-left"></i>
+            </div>
+            <div id="mb-right" class="mobile-icon-pos">
+               <i class="fas fa-arrow-circle-right"></i>
+            </div>
+            <div id="mb-up" class="mobile-icon-pos">
+               <i class="fas fa-arrow-circle-up"></i>
+            </div>
+            <div id="mb-down" class="mobile-icon-pos">
+               <i class="fas fa-arrow-circle-down"></i>
+            </div>
+            <div id="mb-plus" class="mobile-icon-pos">
+               <i class="fas fa-plus-circle"></i>
+            </div>
+            <div id="mb-minus" class="mobile-icon-pos">
+               <i class="fas fa-minus-circle"></i>
+            </div>
+         </section>
+
+         <section class="flex-row mobile-controls">
+            <div id="mb-garment" class="mobile-icon">
+               <i class="fas fa-tshirt"></i>
+            </div>
+            <div id="mb-image" class="mobile-icon">
+               <i class="fas fa-file-image"></i>
+            </div>
+            <div id="mb-text" class="mobile-icon">
+               <i class="fas fa-font"></i>
+            </div>
+            <div id="mb-default" class="mobile-icon">
+               <i class="fas fa-question"></i>
+            </div>
+         </section>
+         <p id="rex"></p>
+         <br>
+         <p id="res"></p>
+
+
+      </main>
+   </div>
+
+
+
+
+   <!-- <footer>
+      <p> &copy; 2018 Sharon Paz</p>
+   </footer> -->
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<script src="/js/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+   integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+   const card = document.querySelector('.creation-card');
+   const ftshirt = document.querySelector('#front-tshirt');
+   const btshirt = document.getElementById('back-tshirt');
+   let x = document.getElementById("Front");
+   let y = document.getElementById("Back");
+   let str = "Front";
+   x.addEventListener("click", frontflip);
+   y.addEventListener("click", backflip);
+   function frontflip() {
+      if (str === "Back") {
+         str = "Front";
+         card.classList.toggle('is-flipped');
+      }
+   }
+   function backflip() {
+      if (str === "Front") {
+         str = "Back";
+         card.classList.toggle('is-flipped');
+      }
+   }
+   function rex() {
+
+      const screenshotTarget = document.querySelector(".front");
+      html2canvas(screenshotTarget).then((canvas) => {
+         const base64image = canvas.toDataURL("image/png");
+         var anchor = document.createElement("a");
+         anchor.setAttribute("href", base64image);
+         anchor.setAttribute("download", "my-image.png");
+         console.log(base64image);
+
+         console.log(anchor);
+         anchor.click();
+         anchor.remove();
+         document.getElementById("rex").textContent = base64image;
+
+      })
+   }
+   function res() {
+
+      const screenshotTarget = document.querySelector(".back");
+      html2canvas(screenshotTarget).then((canvas) => {
+         const base64image = canvas.toDataURL("image/png");
+         var anchor = document.createElement("a");
+         anchor.setAttribute("href", base64image);
+         anchor.setAttribute("download", "my-image.png");
+         console.log(base64image);
+
+         console.log(anchor);
+         anchor.click();
+         anchor.remove();
+         document.getElementById("res").textContent = base64image;
+
+      })
+   }
+
+
+
+</script>
+
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="creation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <title>Creation</title>
+</head>
+
+<body>
+    <div class="creation">
+        <div class="side-logo">
+            <input type="checkbox" id="check">
+            <label for="check">
+               <i class="fa-sharp fa-solid fa-bars fa-3x" id="sidebar-btn"></i>
+                <i class="fas fa-bars" id="sidebar-btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <div class="sidebar">
+                <header style="color:#F05A30">Printwear</header>
+                <a href="#" class="active">
+                    <i class="fas fa-qrcode"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Design Gallery</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-square-plus"></i>
+                    <span>Place Order</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-rectangle-list"></i>
+                    <span>Order Management</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Stock Inventory</span>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Mockup Generator</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Connect your Store</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Invoicing</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Serviceable PIN codes</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Configuration</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </div>
+        <div class="top">
+            <div class="logo">
+                <img src="images/Logo.png" id="logo">
+            </div>
+            <div class="top-icons">
+                <i class="fa-solid fa-wallet fa-lg" id="icon"></i>
+                <p>$4500</p>
+                <i class="fa-solid fa-arrows-rotate fa-lg" id="icon"></i>
+                <i class="fa-solid fa-cart-shopping fa-lg" id="icon"></i>
+            </div>
+        </div>
+        <div class="progressbar">
+            <h2>DESIGN GALLERY</h2>
+            <img src="images/progressbar.png" id="pg-bar">
+        </div>
+        <div class="creation-main">
+            <div class="creation-left">
+                <div class="main-box">
+                    <div class="creation-card">
+                        <div class="front">
+                            <img src="images/front-tshirt-black.png" id="front-tshirt">
+                        </div>
+                        <div class="back">
+                            <img src="images/back-tshirt-black.png" id="back-tshirt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow"><button onclick="flip()"><i class="fa-solid fa-angle-right fa-5x"></i></button></div>
+
+            <div class="creation-right">
+                <div class="insert-img">
+                    <label class="label">
+                        <input type="file" required />
+                        <img src="images/cloud-upload.png" id="upload-img">
+                        <p>Drop one or more files here</p>
+                    </label>
+                    <p>Drop your design as png or jpeg file format</p>
+                    <p id="img-p">Lorem ipsum dolor sit amet consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit
+                    </p>
+                </div>
+                <div class="loc">
+                    <i class="fa-solid fa-magnifying-glass" id="loc-icon"></i>
+                    <input type="text" id="location" placeholder="Enter Your Postal Code/Area Name">
+                </div>
+                <button id="chk-avail">Check Availability</button>
+                <div class="colors">
+                    <button id="black" onclick="frontcolorblack()"></button>
+                    <button id="white" onclick="frontcolorwhite()"></button>
+                    <button id="red" onclick="frontcolorred()"></button>
+                </div>
+                <p id="click">Click Black again to select size</p>
+                <button id="proceed">Proceed</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const card = document.querySelector('.creation-card');
+        const ftshirt = document.querySelector('#front-tshirt');
+        const btshirt = document.getElementById('back-tshirt');
+        function flip() {
+            card.classList.toggle('is-flipped');
+        
+        }
+        function frontcolorred() {
+            ftshirt.src="images/front-tshirt-red.png";
+            btshirt.src="images/back-tshirt-red.png";
+            ftshirt.style.height="300px";
+            ftshirt.style.width="fit-content";
+            btshirt.style.height="300px";
+            btshirt.style.width="fit-content";
+        }
+        function frontcolorwhite() {
+            ftshirt.src="images/front-tshirt-white.png";
+            btshirt.src="images/back-tshirt-white.png";
+            ftshirt.style.height="350px";
+            ftshirt.style.width="fit-content";
+            btshirt.style.height="400px";
+            btshirt.style.width="fit-content";
+        }
+        function frontcolorblack() {
+            ftshirt.src="images/front-tshirt-black.png";
+            btshirt.src="images/back-tshirt-black.png";
+            ftshirt.style.height="400px";
+            ftshirt.style.width="fit-content";
+            btshirt.style.height="400px";
+            btshirt.style.width="fit-content";
+        }
+    </script>
+</body>
+
+</html> -->

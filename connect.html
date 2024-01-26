@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="connectyourstore.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Connect Your Store</title>
+</head>
+
+<body>
+    <div class="cntyourstore">
+        <div class="side-logo">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <!-- <i class="fa-sharp fa-solid fa-bars fa-3x" id="sidebar-btn"></i> -->
+                <i class="fas fa-bars" id="sidebar-btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <div class="sidebar">
+                <header style="color:#F05A30">Printwear</header>
+                <a href="#" class="active">
+                    <i class="fas fa-qrcode"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="design.html">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Design Gallery</span>
+                </a>
+                <a href="cart.html">
+                    <i class="fa-solid fa-square-plus"></i>
+                    <span>Place Order</span>
+                </a>
+                <a href="manageorder.html">
+                    <i class="fa-solid fa-rectangle-list"></i>
+                    <span>Order Management</span>
+                </a>
+                <a href="stock.html">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Stock Inventory</span>
+                </a>
+                <a href="mockup.html">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Mockup Generator</span>
+                </a>
+                <a href="connectyourstore.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Connect your Store</span>
+                </a>
+                <a href="invoice.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Invoicing</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Serviceable PIN codes</span>
+                </a>
+                <!-- <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Configuration</span>
+                </a> -->
+                <a href="index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </div>
+        <div class="top">
+            <div class="logo">
+                <img src="images/Logo.png" id="logo">
+            </div>
+            <div class="top-icons">
+                <i class="fa-solid fa-wallet fa-lg" id="icon"></i>
+                <p>$4500</p>
+                <i class="fa-solid fa-arrows-rotate fa-lg" id="icon"></i>
+                <i class="fa-solid fa-cart-shopping fa-lg" id="icon"></i>
+            </div>
+        </div>
+        <div class="page-head">
+            <h3>CONNECT YOUR STORE</h3>
+        </div>
+        <div class="store-title" data-aos="fade-up">
+            <div class="titles">
+                <div class="title1"><img src="images/cnt-woocommerce.png"></div>
+                <div class="title2"><img src="images/cnt-shopify.png"></div>
+            </div>
+        </div>
+        <div class="woocommerce" data-aos="fade-up">
+            <h3>Connect your Woocommerce account to Printwear</h3>
+            <p>Set up your WooCommerce account to share your website events with Printwear. This will help you see how
+                users are interacting with your business.
+                Then, you may optimise the targeting and delivery of your Printwear ads to drive more business outcomes
+            </p>
+            <div class="bfryoubegin" id="steps-div">
+                <h2>Before You Begin</h2>
+                <p>1.It is mandatory to have the latest version of WooCommerce installed.</p>
+                <p>2.Ensure that your store has a valid SSL certificate</p>
+                <p>3. For custom endpoints to be supported, it is necessary to use Pretty permalinks in Settings >
+                    Permalinks.</p>
+                <p>4. In order to enable the Legacy AP go to WooCommerce > Settings> Advanced > Legacy API.</p>
+            </div>
+            <div class="steps">
+                <h3>Follow the steps to complete the integration process</h3>
+                <div class="step1" id="steps-div">
+                    <h2 id="stepno">STEP 1:</h2>
+                    <p>Create an account on Printwear or log into an existing account.</p>
+                </div>
+                <div class="step2" id="steps-div1">
+                    <h2 id="stepno">STEP 2:</h2>
+                    <p>Connect your WooCommerce store to Printwear by providing your store's URL</p>
+                    <div class="step2-in">
+                        <p>Store URL</p>
+                        <div class="st2">
+                            <h5>Enter a valid URL with "https"</h5>
+                            <button id="btn-cnct">CONNECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step3" id="steps-div1">
+                    <h2 id="stepno">STEP 3:</h2>
+                    <p>Sync products and product options from WooCommerce to Printwear</p>
+                    <img src="images/woocommerce-step3.jpeg">
+                </div>
+                <div class="step4" id="steps-div1">
+                    <h2 id="stepno">STEP 4:</h2>
+                    <p>Configuring product options, pricing, and shipping on Printwear.</p>
+                    <img src="images/woocommerce-step4.jpeg">
+                </div>
+                <div class="step5" id="steps-div1">
+                    <h2 id="stepno">STEP 5:</h2>
+                    <p>Setup payment methods and order processing on Printwear</p>
+                </div>
+                <div class="step6" id="steps-div1">
+                    <h2 id="stepno">STEP 6:</h2>
+                    <p>Integrate the Printwear shop into your WooCommerce store.</p>
+                </div>
+                <p><a>Click here</a>to see a sample video</p>
+                <div class="page-end" id="steps-div">
+                    <input type="url" placeholder="Store URL">
+                    <div class="st2">
+                        <h5>Enter a valid URL with "https"</h5>
+                        <button id="btn-cnct">CONNECT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopify">
+            <h3>Connect your Shopify account to Printwear</h3>
+            <p>Connect your Shopify account to Printwear to better understand how users are interacting with your
+                business.
+                By sharing events, you can optimise the targeting and delivery of your printwear products to drive
+                more business outcomes.
+            </p>
+            <div class="bfryoubegin" id="steps-div">
+                <h2>Before You Begin</h2>
+                <p>1. Enable order read and write permission.</p>
+                <p>2. Enable order edits to read and write permission.</p>
+                <p>3. Enable products to read and write permission.</p>
+                <p>4. Enable product listing read and write permission.</p>
+            </div>
+            <div class="steps">
+                <h3>Follow the steps to complete the integration process</h3>
+                <div class="step1" id="steps-div">
+                    <h2 id="stepno">STEP 1:</h2>
+                    <p>Create an account on Printwear or log into an existing account.</p>
+                </div>
+                <div class="step2" id="steps-div1">
+                    <h2 id="stepno">STEP 2:</h2>
+                    <p>Create a Printwear connection app on your Shopify store</p>
+                    <img src="images/Shopify-stp2-1.png" id="st2-shp">
+                    <img src="images/Shopify-stp2-2.png" id="step2-im-shp">
+                </div>
+                <div class="step3" id="steps-div1">
+                    <h2 id="stepno">STEP 3:</h2>
+                    <p>Connecting your Shopify store to Printwear by providing your store's URL and API credentials</p>
+                    <img src="images/Shopify-stp3.png">
+                </div>
+                <div class="step4" id="steps-div1">
+                    <h2 id="stepno">STEP 4:</h2>
+                    <p>Syncing products and product options from Shopify to Printwear</p>
+                    <img src="images/Shopify-stp4.png">
+                </div>
+                <div class="step5" id="steps-div1">
+                    <h2 id="stepno">STEP 5:</h2>
+                    <p>Configuring product options, pricing, and shipping on Printwear.</p>
+                    <img src="images/woocommerce-step4.jpeg">
+                </div>
+                <div class="step6" id="steps-div1">
+                    <h2 id="stepno">STEP 6:</h2>
+                    <p>Setup payment methods and order processing on Printwear</p>
+                </div>
+                <div class="step7" id="steps-div1">
+                    <h2 id="stepno">STEP 7:</h2>
+                    <p>Integrate the Printwear shop into your Shopify store.</p>
+                </div>
+                <p class="click-here"><a>Click here </a>to see a sample implementation</p>
+                <div class="page-end page-end1" id="steps-div">
+                    <input type="text" placeholder="Store Name">
+                    <input type="text" placeholder="API Key">
+                    <input type="text" placeholder="Secret Key">
+                    <input type="text" placeholder="Admin API Access Token">
+                    <button id="btn-cnct">CONNECT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        let x=document.querySelector('.title1');
+        let y=document.querySelector('.title2');
+        let a=document.querySelector('.woocommerce');
+        let b=document.querySelector('.shopify');
+        x.addEventListener("click",function(){
+            b.style.display="none";
+            a.style.display="block";
+            y.style.backgroundColor="#EEEEEE";
+            x.style.backgroundColor="#AAAAAA";
+        });
+        y.addEventListener("click",function(){
+            a.style.display="none";
+            b.style.display="block";
+            x.style.backgroundColor="#EEEEEE";
+            y.style.backgroundColor="#AAAAAA";
+        });
+    </script>
+</body>
+
+</html>

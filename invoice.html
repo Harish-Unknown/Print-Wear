@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="invoice.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <title>Invoice</title>
+</head>
+
+<body>
+    <div class="invoice">
+        <div class="side-logo">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <!-- <i class="fa-sharp fa-solid fa-bars fa-3x" id="sidebar-btn"></i> -->
+                <i class="fas fa-bars" id="sidebar-btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <div class="sidebar">
+                <header style="color:#F05A30">Printwear</header>
+                <a href="dashboard.html" class="active">
+                    <i class="fas fa-qrcode"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="design.html">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Design Gallery</span>
+                </a>
+                <a href="cart.html">
+                    <i class="fa-solid fa-square-plus"></i>
+                    <span>Place Order</span>
+                </a>
+                <a href="manageorder.html">
+                    <i class="fa-solid fa-rectangle-list"></i>
+                    <span>Order Management</span>
+                </a>
+                <a href="stock.html">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Stock Inventory</span>
+                </a>
+                <a href="mockup.html">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Mockup Generator</span>
+                </a>
+                <a href="productlib.html">
+                   
+                    <i class="fa-regular fa-bags-shopping"></i>
+                    <span>Product Library</span>
+                </a>
+                <a href="connectyourstore.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Connect your Store</span>
+                </a>
+                <a href="invoice.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Invoicing</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Serviceable PIN codes</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Configuration</span>
+                </a>
+                <a href="index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </div>
+        <div class="top">
+            <div class="logo">
+                <img src="images/Logo.png" id="logo">
+            </div>
+            
+            <div class="top-icons">
+                <i class="fa-solid fa-wallet fa-lg" id="icon"></i>
+                <p>$4500</p>
+                <i class="fa-solid fa-arrows-rotate fa-lg" id="icon"></i>
+                <i class="fa-solid fa-cart-shopping fa-lg" id="icon"></i>
+            </div>
+        </div>
+        <div class="head">
+            <p>INVOICING</p>
+        </div>
+        <div class="choice-cnt" data-aos="fade-up">
+            <div class="choice">
+                <p id="ch1" class="chc active">Credits</p>
+                <p id="ch2" class="chc">Payment</p>
+                <p id="ch4" class="chc">Invoice</p>
+            </div>
+        </div>
+        <div class="main-cnt" data-aos="fade-up">
+            <div class="main credit" id="credit">
+                <div class="fil">
+                    <div class="filter">
+                        <div class="name">
+                            <input type="text" placeholder="Order ID">
+                        </div>
+                        <div class="dropdown">
+                            <p>All <i class="fa-solid fa-sort-down"></i></p>
+                            <div class="dropdown-content">
+                                <p>scroll1</p>
+                                <p>scroll2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bts">
+                    <div class="btns">
+                        <div class="bt-n">
+                            <button class="bt-1">Search</button>
+                        </div>
+                        <div class="bt-n">
+                            <button class="bt-2">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="headings">
+                    <div class="list-topics">
+                        <div class="list date">
+                            <p>Date</p>
+                        </div>
+                        <div class="list ordid">
+                            <p>Order/Payment ID</p>
+                        </div>
+                        <div class="list type">
+                            <p>Type</p>
+                        </div>
+                        <div class="list amt">
+                            <p>Amount</p>
+                        </div>
+                        <div class="list cmnt">
+                            <p>Comments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents">
+                    <div class="cnts">
+                        <div class="dates">
+                            <p>14-04-2023</p>
+                        </div>
+                        <div class="ord">
+                            <p>25565</p>
+                        </div>
+                        <div class="type">
+                            <p>Credit</p>
+                        </div>
+                        <div class="amont">
+                            <p>$1000</p>
+                        </div>
+                        <div class="cmnts">
+                            <p>Recharge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents">
+                    <div class="cnts">
+                        <div class="dates">
+                            <p>14-04-2023</p>
+                        </div>
+                        <div class="ord">
+                            <p>25565</p>
+                        </div>
+                        <div class="type">
+                            <p>Credit</p>
+                        </div>
+                        <div class="amont">
+                            <p>$1000</p>
+                        </div>
+                        <div class="cmnts">
+                            <p>Recharge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents">
+                    <div class="cnts">
+                        <div class="dates">
+                            <p>14-04-2023</p>
+                        </div>
+                        <div class="ord">
+                            <p>25565</p>
+                        </div>
+                        <div class="type">
+                            <p>Credit</p>
+                        </div>
+                        <div class="amont">
+                            <p>$1000</p>
+                        </div>
+                        <div class="cmnts">
+                            <p>Recharge</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main payment" id="payment">
+                <div class="fil">
+                    <div class="filter">
+                        <div class="name">
+                            <input type="text" placeholder="Reference Number">
+                        </div>
+                    </div>
+                </div>
+                <div class="bts">
+                    <div class="btns">
+                        <div class="bt-n">
+                            <button class="bt-1">Search</button>
+                        </div>
+                        <div class="bt-n">
+                            <button class="bt-2">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="headings">
+                    <div class="list-topics">
+                        <div class="list date">
+                            <p>Date</p>
+                        </div>
+                        <div class="list ordid">
+                            <p>Reference Number</p>
+                        </div>
+                        <div class="list type">
+                            <p>Amount</p>
+                        </div>
+                        <div class="list amt">
+                            <p>Payment Type</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents">
+                    <div class="cnts">
+                        <div class="dates">
+                            <p>14-04-2023</p>
+                        </div>
+                        <div class="ord">
+                            <p>25565</p>
+                        </div>
+                        <div class="amont">
+                            <p>$1000</p>
+                        </div>
+                        <div class="cmnts">
+                            <p>Recharge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents">
+                    <div class="cnts">
+                        <div class="dates">
+                            <p>14-04-2023</p>
+                        </div>
+                        <div class="ord">
+                            <p>25565</p>
+                        </div>
+                        <div class="amont">
+                            <p>$1000</p>
+                        </div>
+                        <div class="cmnts">
+                            <p>Recharge</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main invoices" id="invoice">
+                <div class="fil">
+                    <div class="filter">
+                        <div class="name">
+                            <input type="text" placeholder="Invoice Number">
+                        </div>
+                        <div class="name">
+                            <input type="text" placeholder="Order Number">
+                        </div>
+                    </div>
+                </div>
+                <div class="bts">
+                    <div class="btns">
+                        <div class="bt-n">
+                            <button class="bt-1">Search</button>
+                        </div>
+                        <div class="bt-n">
+                            <button class="bt-2">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Err">
+                    <p>Oops.. It looks like we couldn't find any data. Please try to change the filters and try again.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        let a = document.getElementById("credit");
+        let b = document.getElementById("payment");
+        let d = document.getElementById("invoice");
+        let ch1 = document.getElementById("ch1");
+        let ch2 = document.getElementById("ch2");
+        let ch4 = document.getElementById("ch4");
+        ch1.addEventListener("click", function () {
+            a.style.display = "block";
+            b.style.display = "none";
+            d.style.display = "none";
+            ch1.classList.add("active");
+            ch2.classList.remove("active");
+            ch4.classList.remove("active");
+        });
+        ch2.addEventListener("click", function () {
+            a.style.display = "none";
+            b.style.display = "block";
+            d.style.display = "none";
+            ch1.classList.remove("active");
+            ch2.classList.add("active");
+            ch4.classList.remove("active");
+        });
+        ch4.addEventListener("click", function () {
+            a.style.display = "none";
+            b.style.display = "none";
+            d.style.display = "block";
+            ch1.classList.remove("active");
+            ch2.classList.remove("active");
+            ch4.classList.add("active");
+        });
+    </script>
+</body>
+
+</html>

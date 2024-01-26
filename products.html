@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="products.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="stock">
+        <div class="side-logo">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <!-- <i class="fa-sharp fa-solid fa-bars fa-3x" id="sidebar-btn"></i> -->
+                <i class="fas fa-bars" id="sidebar-btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <div class="sidebar">
+                <header style="color:#F05A30">Printwear</header>
+                <a href="#" class="active">
+                    <i class="fas fa-qrcode"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="design.html">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Design Gallery</span>
+                </a>
+                <a href="cart.html">
+                    <i class="fa-solid fa-square-plus"></i>
+                    <span>Place Order</span>
+                </a>
+                <a href="manageorder.html">
+                    <i class="fa-solid fa-rectangle-list"></i>
+                    <span>Order Management</span>
+                </a>
+                <a href="stock.html">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Stock Inventory</span>
+                </a>
+                <a href="mockup.html">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Mockup Generator</span>
+                </a>
+                <a href="connectyourstore.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Connect your Store</span>
+                </a>
+                <a href="invoice.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Invoicing</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Serviceable PIN codes</span>
+                </a>
+                <!-- <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Configuration</span>
+                </a> -->
+                <a href="index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </div>
+         <div class="top">
+            <div class="logo">
+               <img src="images/Logo.png" id="logo">
+            </div>
+            <div class="top-icons">
+               <i class="fa-solid fa-wallet fa-lg" id="icon"></i>
+               <p>$4500</p>
+               <i class="fa-solid fa-arrows-rotate fa-lg" id="icon"></i>
+               <i class="fa-solid fa-cart-shopping fa-lg" id="icon"></i>
+            </div>
+         </div>
+        <div class="head">
+            <p>PRODUCTS</p>
+        </div>
+        <div class="main">
+            <div class="filter">
+                <div class="name">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="filt">
+                    <div class="dropdown">
+                        <p>All <i class="fa-solid fa-sort-down"></i></p>
+                        <div class="dropdown-content">
+                            <p>All</p>
+                            <p>Hoodies</p>
+                            <p>Kids</p>
+                            <p>Men</p>
+                            <p>Raglan Sleeve</p>
+                            <p>Round Neck Full Sleeve</p>
+                            <p>Sweatshirt</p>
+                            <p>Women</p>
+                            <p>Work Wear Polo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <hr>
+            </div>
+            <div class="cards">
+                <div class="display-card">
+                    <div class="card-img">
+                        <img src="images/roundneck.png">
+                    </div>
+                    <div class="details">
+                        <div class="name-price">
+                            <h3>Men Round Neck</h3>
+                            <p>Rs.129-999</p>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-plus" id="cart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-card">
+                    <div class="card-img">
+                        <img src="images/hoodie.png">
+                    </div>
+                    <div class="details">
+                        <div class="name-price">
+                            <h3>Hoodies</h3>
+                            <p>Rs.129-999</p>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-plus" id="cart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-card">
+                    <div class="card-img">
+                        <img src="images/sweatshirt.png">
+                    </div>
+                    <div class="details">
+                        <div class="name-price">
+                            <h3>Sweatshirt</h3>
+                            <p>Rs.129-999</p>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-plus" id="cart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-card">
+                    <div class="card-img">
+                        <img src="images/raglaantshirt.png">
+                    </div>
+                    <div class="details">
+                        <div class="name-price">
+                            <h3>Crop Top</h3>
+                            <p>Rs.129-999</p>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-plus" id="cart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-card">
+                    <div class="card-img">
+                        <img src="images/roundneck.png">
+                    </div>
+                    <div class="details">
+                        <div class="name-price">
+                            <h3>Men Oversized T-shirt</h3>
+                            <p>Rs.129-999</p>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-plus" id="cart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-card">
+                    <div class="card-img">
+                        <img src="images/roundneck.png">
+                    </div>
+                    <div class="details">
+                        <div class="name-price">
+                            <h3>Women Round Neck</h3>
+                            <p>Rs.129-999</p>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-plus" id="cart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-card">
+                    <div class="card-img">
+                        <img src="images/roundneck.png">
+                    </div>
+                    <div class="details">
+                        <div class="name-price">
+                            <h3>Men Vest</h3>
+                            <p>Rs.129-999</p>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-plus" id="cart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-card">
+                    <div class="card-img">
+                        <img src="images/roundneck.png">
+                    </div>
+                    <div class="details">
+                        <div class="name-price">
+                            <h3>Men Full Sleeve</h3>
+                            <p>Rs.129-999</p>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-plus" id="cart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-card">
+                    <div class="card-img">
+                        <img src="images/roundneck.png">
+                    </div>
+                    <div class="details">
+                        <div class="name-price">
+                            <h3>Crop Top Hoodies</h3>
+                            <p>Rs.129-999</p>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-plus" id="cart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-card">
+                    <div class="card-img">
+                        <img src="images/roundneck.png">
+                    </div>
+                    <div class="details">
+                        <div class="name-price">
+                            <h3>Boyfriend Tees</h3>
+                            <p>Rs.129-999</p>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-plus" id="cart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

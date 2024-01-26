@@ -1,0 +1,293 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+@font-face{
+    font-family: myFont;
+    src:url(BaseNeueTrial-SemiBoldOblique.ttf);
+  }
+  * {
+    font-family: myFont;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.14rem;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+body{
+    background: #d7dade;
+}
+.select-menu{
+    width: 300px;
+    height: 40px;
+    margin: 70px auto;
+    box-shadow:0px 2px 5px #666666;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+    
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+}
+div.banner{
+  width: 70vw;
+  height: 60vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+	padding:40px; 
+  background: #ffff;
+  box-shadow:0px 2px 5px #666666;
+}
+div.T{
+	font-size:20px;
+	margin: 30px 0px 30px 300px;
+}
+button{
+  background-color: #F05A30;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 350px;
+  padding-left: 100px;
+  padding-right: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+}
+
+
+.top {
+    display: flex;
+    flex-direction: row;
+    margin-left:60px;
+    justify-content: space-between;
+}
+#logo{
+    margin-top: -38px;
+}
+.top-icons {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: solid; */
+    width: 300px;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #000;
+}
+
+.top-icons p {
+    margin-top: -10px !important;
+}
+
+.top{
+	margin-top: 15px;
+}
+/* Sidebar */
+
+.sidebar{
+    position: fixed;
+    width: 300px;
+    left: -300px;
+    height: 150%;
+    top:0px;
+    background: #1e1e1e;
+    transition: all .5s ease;
+    z-index: 5;
+  }
+  
+  .logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid;
+  }
+  .sidebar header{
+    font-size: 28px;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    background: #1b1b1b;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .sidebar a{
+    display: block;
+    height: 50px;
+    width: 100%;
+    color: white;
+    line-height: 50px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-left: 5px solid transparent;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+  }
+  .sidebar a:active,.sidebar a:hover{
+    border-left: 5px solid #7275be;
+    color: #7275be;
+    text-decoration: none;
+  }
+  .sidebar a:focus{
+    color: #7275BE;
+  }
+  .sidebar a i{
+    font-size: 20px;
+    margin-right: 16px;
+  }
+  .sidebar a span{
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  #check{
+    display: none;
+  }
+  label #sidebar-btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #262626;
+    margin: 15px 30px;
+    font-size: 29px;
+    background: #262626;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+  }
+  label #cancel{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #sidebar-btn{
+    margin-left: 305px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+    margin-left: 305px;
+    opacity: 1;
+    visibility: visible;
+  }
+  @media(max-width : 860px){
+    .sidebar{
+      height: auto;
+      width: 50px;
+      left: 0;
+      top:-100px;
+      margin: 100px 0;
+    }
+    header,#sidebar-btn,#cancel{
+      display: none !important;
+    }
+    span{
+      position: absolute;
+      margin-left: 23px;
+      opacity: 0;
+      width: max-content;
+      visibility: hidden;
+    }
+    .sidebar a{
+      height: 43px;
+    }
+    .sidebar a i{
+      margin-left: -20px;
+    }
+    a:hover {
+      width: 300px;
+      background: inherit;
+    }
+    .sidebar a:hover span{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+.logo {
+    margin-top: 45px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.progressbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: solid; */
+    margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 300px;
+}
+
+.progressbar a {
+    color: #000;
+    /* border: solid; */
+    padding-left: 100px;
+    font-size: 25px;
+}
+
+
+
+.progressbar h2 {
+    margin-top: 0px;
+    font-weight: bold;
+}

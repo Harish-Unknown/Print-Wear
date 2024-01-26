@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <title>Placeorder</title>
+</head>
+
+<body>
+    <div class="cart">
+        <div class="side-logo">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa-sharp fa-solid fa-bars fa-3x" id="sidebar-btn"></i>
+                <i class="fas fa-bars" id="sidebar-btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <div class="sidebar">
+                <header style="color:#F05A30">Printwear</header>
+                <a href="dashboard.html" class="active">
+                    <i class="fas fa-qrcode"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="design.html">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Design Gallery</span>
+                </a>
+                <a href="cart.html">
+                    <i class="fa-solid fa-square-plus"></i>
+                    <span>Place Order</span>
+                </a>
+                <a href="manageorder.html">
+                    <i class="fa-solid fa-rectangle-list"></i>
+                    <span>Order Management</span>
+                </a>
+                <a href="stock.html">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Stock Inventory</span>
+                </a>
+                <a href="mockup.html">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Mockup Generator</span>
+                </a>
+                <a href="productlib.html">
+
+                    <i class="fa-regular fa-bags-shopping"></i>
+                    <span>Product Library</span>
+                </a>
+                <a href="connectyourstore.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Connect your Store</span>
+                </a>
+                <a href="invoice.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Invoicing</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Serviceable PIN codes</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Configuration</span>
+                </a>
+                <a href="index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </div>
+        <div class="top">
+            <div class="logo">
+                <img src="images/Logo.png" id="logo">
+            </div>
+            <div class="top-icons">
+                <i class="fa-solid fa-wallet fa-lg" id="icon"></i>
+                <p>$4500</p>
+                <i class="fa-solid fa-arrows-rotate fa-lg" id="icon"></i>
+                <i class="fa-solid fa-cart-shopping fa-lg" id="icon"></i>
+            </div>
+        </div>
+        <div class="progressbar">
+            <h2>CREATE ORDER</h2>
+        </div>
+        <div class="stps" data-aos="fade-up">
+            <div class="steps">
+                <div class="stp">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <p>Products</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div class="stp">
+                    <i class="fa-solid fa-truck"></i>
+                    <p>Shipping</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div class="stp">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Review</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont" data-aos="fade-up">
+            <p>Add a product to start creating your order</p>
+            <!-- Button trigger modal -->
+            <button type="button" data-toggle="modal" data-target="#exampleModal" id="bt">
+                Add Product
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <div class="prdts">
+                                <p class="aa a" id="a">New Product</p>
+                                <p class="bb" id="a1">Product Library</p>
+                                <p class="cc" id="a2">Quick Add</p>
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="bt1">
+                                <i class="fa-solid fa-rectangle-xmark fa-lg df"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body border-0">
+                            <div id="newpdt">
+                                <div class="cats">
+                                    <input class="cat" placeholder="Category">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <input class="cat" placeholder="Products Under Category">
+                                </div>
+                                <div class="bt-main"><a href="creation.html" style="text-decoration: none;"><button id="fg">Confirm</button></a></div>
+                            </div>
+                            <div id="pdtlib" class="dis">
+                                <div class="row" data-aos="fade-up">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12">
+
+                                                        <img src="images/pdtlib.png" height="200px" id="pdt">
+
+                                                        <br>
+                                                        <br>
+                                                        <p>Start creating your products and save them for reordering
+                                                            quickly.<br>
+                                                            You can also push them to your online store once you connect
+                                                            your store with Printwear</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn-orange"
+                                                            onclick="showPopup()">Add Product</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- The popup page -->
+                                <div id="popup" class="popup">
+                                    <div class="popup-content">
+                                        <button class="close-button" onclick="hidePopup()"> <i
+                                                class="fa-solid fa-close"></i></button>
+                                        <div class="row">
+                                            <div class="col cs">
+                                                <img src="images/sync.png" alt="Sync Image"
+                                                    style="display: block; width: 100%;">
+                                                <h3 class="section-title">Sync</h3>
+                                                <br>
+
+                                                <p>Create and sync with an existing product on your store</p>
+                                            </div>
+                                            <div class="col cs">
+                                                <img src="images/push.png" alt="Push Image"
+                                                    style="display: block; width: 100%;">
+                                                <h3 class="section-title">Push</h3>
+                                                <br>
+
+                                                <p>Create and push the product to your store</p>
+                                            </div>
+                                            <div class="col acti cs">
+                                                <a href="creation.html" style="text-decoration:none;color:inherit">
+                                                <img src="images/save.png" alt="Save Image"
+                                                    style="display: block; width: 100%;">
+                                                <h3 class="section-title">Save</h3>
+                                                <br>
+
+                                                <p>Create and save the product to Product Library for quick re-ordering
+                                                </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="quick" class="dis">
+                                <input type="text" placeholder="Enter the SKU" id="sk">
+                                <button id="fg">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            let a = document.getElementById("a");
+            let a1 = document.getElementById("a1");
+            let a2 = document.getElementById("a2");
+            let x = document.getElementById("newpdt");
+            let y = document.getElementById("pdtlib");
+            let z = document.getElementById("quick");
+
+            a.addEventListener("click", function () {
+                y.style.display = "none";
+                x.style.display = "block";
+                z.style.display = "none";
+                a.classList.add("a");
+                a1.classList.remove("a");
+                a2.classList.remove("a");
+            });
+            a1.addEventListener("click", function () {
+                x.style.display = "none";
+                y.style.display = "block";
+                z.style.display = "none";
+                a1.classList.add("a");
+                a.classList.remove("a");
+                a2.classList.remove("a");
+            });
+            a2.addEventListener("click", function () {
+                x.style.display = "none";
+                y.style.display = "none";
+                z.style.display = "block";
+                a2.classList.add("a");
+                a1.classList.remove("a");
+                a.classList.remove("a");
+            })
+        </script>
+        <script>
+            function showPopup() {
+              document.getElementById('popup').style.display = 'block';
+            }
+      
+            function hidePopup() {
+              document.getElementById('popup').style.display = 'none';
+            }
+          </script>
+</body>
+
+</html>

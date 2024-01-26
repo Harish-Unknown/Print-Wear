@@ -1,0 +1,425 @@
+*{
+    font-family: 'Nunito';
+    text-decoration: none;
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    margin-left:60px;
+    justify-content: space-between;
+}
+#logo{
+    margin-top: -38px;
+}
+.top-icons {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: solid; */
+    width: 300px;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #000;
+}
+
+.top-icons p {
+    margin-top: -10px !important;
+}
+
+#logo {
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.page-head h3{
+    font-size: 3vw;
+    text-align: center;
+    /* text-shadow: 2px 0px #000; */
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+.store-title{
+    display: flex;
+    flex-direction: row;
+}
+.woocommerce,.shopify{
+    background-color: #AAAAAA;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-30px;
+    padding: 30px;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 0 #fff;
+    box-sizing: border-box;
+}
+.woocommerce h3,.shopify h3{
+    font-size: 38px;
+    text-align: left;
+}
+.woocommerce p,.shopify p{
+    font-size: 19px;
+    font-weight: 500;
+}
+.titles{
+    display: flex;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    flex-direction: row;
+    background-color: #eee;
+    width: 90%;
+    cursor: pointer;
+    justify-content: space-around;
+    background-color: #EEEEEE;
+}
+.titles img{
+    width: 400px;
+    height:110px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+}
+.store-title{
+    display: flex;
+    justify-content: center;
+}
+.title1{
+    width: 100%;
+    display: flex;
+    border-top-left-radius: 20px;
+    justify-content: center; 
+    background-color: #AAAAAA;
+}
+.title2{
+    width: 100%;
+    border-top-right-radius: 20px;
+    justify-content: center;
+    display: flex;
+}
+#stepno{
+    color: #000;
+    font-size: 22px;
+    text-shadow: 1px 0 #000;
+}
+.bfryoubegin h2{
+    color:#000;
+    text-shadow: 1px 0 #000;
+}
+#steps-div{
+    background-color: rgba(255, 255, 255, 0.20) !important;
+    backdrop-filter: blur(5px);
+    height: max-content;
+    width: 97%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px; 
+    box-sizing: border-box;
+    padding: 20px
+}
+#steps-div1{
+    background-color: rgba(255, 255, 255, 0.20) !important;
+    backdrop-filter: blur(5px);
+    height: max-content;
+    width: 97%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px; 
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 30px;
+}
+.step2-in p{
+    background-color: #fff;
+    color:#000;
+    font-size: 15px;
+    padding: 8px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+#btn-cnct{
+    padding: 5px;
+    background-color: #F05A30;
+    border-radius: 20px;
+    color:#fff;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+    margin-right: 20px;
+}
+.step2-in{
+    background-color: #AAAAAA;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 130px;
+    border-radius: 20px;
+}
+.st2{
+    display: flex;
+    flex-direction: row;
+    margin-top: -5px;
+    height:40px;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+.st2 h5{
+    color: red;
+    text-shadow: 0 0 red;
+}
+#steps-div1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-end input{
+    border-radius: 17px;
+    padding: 15px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-bottom: 20px;
+}
+.page-end input:active,.page-end input:focus{
+    outline: none;
+}
+.steps h3{
+    font-size: 30px;
+    text-shadow: 1px 0 #000;
+    color: #000;
+}
+#st2-shp{
+    margin-bottom: 20px;
+}
+.click-here{
+    padding-left: 20px;
+    color:#000;
+    text-shadow: 1px 0 #000;
+}
+.click-here a{
+    color:#fff;
+    text-shadow: 1px 0 #fff;
+    cursor: pointer;
+}
+.page-end1{
+    height: 350px !important;
+}
+.shopify{
+    display: none;
+}
+#st2-shp{
+    max-width: 90%;
+}
+#step2-im-shp{
+    max-width: 90%;
+}
+.step5 img{
+    max-width: 90%;
+}
+.step3 img{
+    max-width: 90%;
+}
+.step4 img{
+    max-width: 90%;
+}
+
+/* Sidebar */
+
+.sidebar{
+    position: fixed;
+    width: 300px;
+    left: -300px;
+    height: 150%;
+    top:0px;
+    background: #1e1e1e;
+    transition: all .5s ease;
+    z-index: 5;
+  }
+  
+  .logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid;
+  }
+  .sidebar header{
+    font-size: 28px;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    background: #1b1b1b;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .sidebar a{
+    display: block;
+    height: 50px;
+    width: 100%;
+    color: white;
+    line-height: 50px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-left: 5px solid transparent;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+  }
+  .sidebar a:active,.sidebar a:hover{
+    border-left: 5px solid #7275be;
+    color: #7275be;
+    text-decoration: none;
+  }
+  .sidebar a:focus{
+    color: #7275BE;
+  }
+  .sidebar a i{
+    font-size: 20px;
+    margin-right: 16px;
+  }
+  .sidebar a span{
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  #check{
+    display: none;
+  }
+  label #sidebar-btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #262626;
+    margin: 15px 30px;
+    font-size: 29px;
+    background: #262626;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+  }
+  label #cancel{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #sidebar-btn{
+    margin-left: 305px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+    margin-left: 305px;
+    opacity: 1;
+    visibility: visible;
+  }
+  @media(max-width : 860px){
+    .sidebar{
+      height: auto;
+      width: 50px;
+      left: 0;
+      top:-100px;
+      margin: 100px 0;
+    }
+    header,#sidebar-btn,#cancel{
+      display: none !important;
+    }
+    span{
+      position: absolute;
+      margin-left: 23px;
+      opacity: 0;
+      width: max-content;
+      visibility: hidden;
+    }
+    .sidebar a{
+      height: 43px;
+    }
+    .sidebar a i{
+      margin-left: -20px;
+    }
+    a:hover {
+      width: 300px;
+      background: inherit;
+    }
+    .sidebar a:hover span{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+/* Responsive */
+
+@media screen and (max-width:731px) {
+    .woocommerce h3, .shopify h3{
+        font-size: 34px;
+    }
+    .woocommerce p, .shopify p{
+        font-size: 17px;
+    }
+    #stepno{
+        font-size: 20px;
+    }
+    .step2-in p{
+        font-size: 13px;
+    }
+    .st2 h5{
+        display: none;
+    }
+    .steps h3{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:615px) {
+}
+@media screen and (max-width:571px) {
+}
+@media screen and (max-width:511px) {
+    .woocommerce h3, .shopify h3{
+        font-size: 33px;
+    }
+    .woocommerce p, .shopify p{
+        font-size: 16px;
+    }
+    #stepno{
+        font-size: 19px;
+    }
+    .step2-in p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:461px) {
+}
+@media screen and (max-width:401px) {
+    .woocommerce h3, .shopify h3{
+        font-size: 31px;
+    }
+    .woocommerce p, .shopify p{
+        font-size: 14px;
+    }
+    #stepno{
+        font-size: 17px;
+    }
+    .step2-in p{
+        font-size: 10px;
+    }
+    .step2-in{
+        width: fit-content;
+    }
+}
